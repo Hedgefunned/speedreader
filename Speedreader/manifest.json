@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+ 
+  "name": "SpeedRead",
+  "version": "1",
+  "description": "Just testing theory about reading from 9gag",
+  "background": "background.html",
+  "browser_action": {
+    "name": "Speedreader",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
+   
